@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Premium Agent Landing Page | Built by A.I.nstein Automations</title>
+<meta name="description" content="A luxury, high-converting real estate agent landing page built by A.I.nstein Automations.">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+
+<style>
+
+/* --------------------------------------------
+   ROOT VARIABLES
+--------------------------------------------- */
+
+:root {
+  --gold: #d4af37;
+  --gold-light: #f8e7a1;
+  --purple-dark: #12031e;
+  --purple-mid: #3b1674;
+  --purple-light: #6342b0;
+
+  --text-main: #ffffff;
+  --text-sub: #d5d1e0;
+
+  --card-bg: rgba(255,255,255,0.04);
+  --card-border: rgba(255,255,255,0.08);
+}
+
+/* --------------------------------------------
+   GLOBAL STYLES
+--------------------------------------------- */
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: radial-gradient(circle at top,
+                var(--purple-light) 0%,
+                var(--purple-mid) 40%,
+                var(--purple-dark) 100%);
+  color: var(--text-main);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+section {
+  padding: 80px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+h1, h2, h3 {
+  margin: 0 0 20px 0;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 2.3rem;
+  font-weight: 800;
+}
+
+p {
+  color: var(--text-sub);
+  font-size: 1.15rem;
+  line-height: 1.65;
+}
+
+/* --------------------------------------------
+   NAV BAR
+--------------------------------------------- */
+
+nav {
+  width: 100%;
+  padding: 25px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand-text {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+nav a {
+  color: var(--text-main);
+  font-weight: 500;
+  margin-left: 25px;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+/* --------------------------------------------
+   HERO SECTION
+--------------------------------------------- */
+
+.hero {
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero h1 span {
+  color: var(--gold);
+}
+
+.hero-sub {
+  margin-top: 20px;
+  color: var(--text-sub);
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.2rem;
+}
+
+/* --------------------------------------------
+   BUTTONS WITH GLOW EFFECT
+--------------------------------------------- */
+
+.btn-gold {
+  background: linear-gradient(135deg, var(--gold), var(--gold-light));
+  padding: 16px 32px;
+  border-radius: 50px;
+  color: #000;
+  font-weight: 700;
+  font-size: 1.1rem;
+  display: inline-block;
+  margin-top: 35px;
+  text-decoration: none;
+  box-shadow: 0 0 18px rgba(212,175,55,0.55);
+  transition: 0.25s ease;
+}
+
+.btn-gold:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 27px rgba(212,175,55,0.8);
+}
+
+.btn-outline {
+  margin-left: 20px;
+  border: 2px solid var(--gold);
+  padding: 14px 30px;
+  border-radius: 50px;
+  color: var(--gold-light);
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: 0.3s ease;
+}
+
+.btn-outline:hover {
+  background: rgba(212,175,55,0.2);
+}
+
+/* --------------------------------------------
+   FEATURE CARDS
+--------------------------------------------- */
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 25px;
+  margin-top: 50px;
+}
+
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  padding: 30px;
+  border-radius: 18px;
+  backdrop-filter: blur(6px);
+  transition: 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-7px);
+  border-color: var(--gold);
+}
+
+/* --------------------------------------------
+   AIRTABLE EMBED
+--------------------------------------------- */
+
+.form-container {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  padding: 40px;
+  border-radius: 18px;
+  backdrop-filter: blur(7px);
+}
+
+iframe.airtable-embed {
+  width: 100%;
+  height: 700px;
+  border: none;
+  border-radius: 12px;
+}
+
+/* --------------------------------------------
+   FOOTER
+--------------------------------------------- */
+
+footer {
+  padding: 40px;
+  text-align: center;
+  color: var(--text-sub);
+  font-size: 0.95rem;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- --------------------------------------------
+     NAVIGATION
+--------------------------------------------- -->
+<nav>
+  <div class="brand-text">A.I.nstein Automations</div>
+  <div>
+    <a href="#features">Features</a>
+    <a href="#form">Get Started</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+
+<!-- --------------------------------------------
+     HERO SECTION
+--------------------------------------------- -->
+<section class="hero">
+  <h1>Premium Landing Pages <br> for Serious <span>Real Estate Agents</span></h1>
+
+  <p class="hero-sub">
+    Stand out. Build authority. Capture leads instantly.  
+    This luxury, high-performance landing page is built for top-producing agents who want a modern brand presence without paying agency prices.
+  </p>
+
+  <a class="btn-gold" href="#form">Build My Landing Page</a>
+  <a class="btn-outline" href="#features">See Features</a>
+</section>
+
+
+<!-- --------------------------------------------
+     FEATURES
+--------------------------------------------- -->
+<section id="features">
+  <h2>What Your Landing Page Includes</h2>
+
+  <div class="features">
+
+    <div class="card">
+      <h3>Premium Apple-Style Design</h3>
+      <p>Beautiful gradients, luxury typography, animated buttons, and a refined layout that makes your brand look elite.</p>
+    </div>
+
+    <div class="card">
+      <h3>Mobile-Optimized for Speed</h3>
+      <p>More than 70% of real estate traffic is mobile — your page will look flawless on any device.</p>
+    </div>
+
+    <div class="card">
+      <h3>Lead Capture + Automation</h3>
+      <p>Your Airtable form captures leads instantly and triggers your automations without delay.</p>
+    </div>
+
+    <div class="card">
+      <h3>Built-In Trust & Branding</h3>
+      <p>Includes testimonials, bio section, and branding structure designed to convert cold traffic into warm leads.</p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- --------------------------------------------
+     AIRTABLE FORM EMBED
+--------------------------------------------- -->
+<section id="form">
+  <h2>Get Your Landing Page Started</h2>
+
+  <p>Fill out the form below and I’ll build your page within 24–48 hours.</p>
+
+  <div class="form-container">
+
+    <!-- ⭐ PASTE YOUR AIRTABLE EMBED LINK BELOW ⭐ -->
+    <!-- Replace YOUR_EMBED_URL with your Airtable embed link -->
+
+    <iframe class="airtable-embed"
+      src="YOUR_AIRTABLE_EMBED_URL_HERE">
+    </iframe>
+
+  </div>
+</section>
+
+
+<!-- --------------------------------------------
+     CONTACT FOOTER
+--------------------------------------------- -->
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: <strong>AinsteinAutomation@gmail.com</strong></p>
+  <p>Phone: <strong>(302) 803-8664</strong></p>
+</section>
+
+<footer>
+  Built by <strong>A.I.nstein Automations</strong> — Premium AI + Web Automation Services.
+</footer>
+
+</body>
+</html>
